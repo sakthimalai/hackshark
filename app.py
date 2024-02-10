@@ -29,7 +29,7 @@ def predict_api(feature1, feature2, feature3, feature4, feature5):
     # Make the prediction using the model
     prediction = model.predict(input_data)
 
-    output = prediction[0]
+    output = np.round(prediction[0]).astype(int).tolist()
     return jsonify(output)
 
 if __name__ == "__main__":
