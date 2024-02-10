@@ -1,0 +1,5 @@
+Flask
+Gunicorn
+Numpy
+Pandas
+Scikit-Learn==1.0.2
